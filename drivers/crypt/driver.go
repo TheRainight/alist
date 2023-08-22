@@ -72,7 +72,7 @@ func (d *Crypt) Init(ctx context.Context) error {
 		"password2":                 p2,
 		"filename_encryption":       d.FileNameEnc,
 		"directory_name_encryption": d.DirNameEnc,
-		"filename_encoding":         "base64",
+		"filename_encoding":         "base32",
 		"suffix":                    d.EncryptedSuffix,
 		"pass_bad_blocks":           "",
 	}
